@@ -5,6 +5,20 @@
 <title>Insert title here</title>
 </head>
 <body>
- <h3><span th:text="'Hello, ' + ${name} + '!'"></span> !!!</h3>
+ 	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody th:each ="person : ${listPeople}">
+			<tr>
+				<td th:text="${person.name}"></td>
+				<th th:text="${person.age}"></th>
+			</tr>
+		</tbody>
+		
+	</table> 
 </body>
 </html>
