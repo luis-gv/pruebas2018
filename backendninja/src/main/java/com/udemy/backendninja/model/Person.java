@@ -10,6 +10,10 @@ public class Person {
 		this.age = age;
 	}
 	
+	public Person(){
+		super();
+	}
+	
 	public String getName() {
 		return name;
 	}

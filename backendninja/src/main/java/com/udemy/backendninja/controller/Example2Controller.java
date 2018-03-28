@@ -24,7 +24,7 @@ public class Example2Controller {
 	
 	@RequestMapping(value="/request2/{nm}", method=RequestMethod.GET )
 	public ModelAndView request2(@PathVariable(name="nm")String name){
-		ModelAndView mav = new ModelAndView(EXAMPLE2_VIEW);		
+		ModelAndView mav = new ModelAndView(EXAMPLE2_VIEW);
 		mav.addObject("nm_in_model",name);
 		return mav;
 	}
