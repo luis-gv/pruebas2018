@@ -1,7 +1,5 @@
 package com.udemy.backendninja.controller;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
-
 import javax.validation.Valid;
 
 import org.apache.commons.logging.Log;
