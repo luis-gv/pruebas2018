@@ -29,8 +29,8 @@ public class CourseController {
 	@GetMapping("/listCourses")
 	public ModelAndView listAllCourses(){
 		LOG.info("Calling:" + "listAllCourses()");
-
 		ModelAndView mav = new ModelAndView(COURSES_VIEW);
+		mav.addObject("course", new Course());
 		mav.addObject("courses", courseService.listAllCourses());
 		
 		return mav;
