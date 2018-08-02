@@ -1,0 +1,23 @@
+banner:
+  location:
+    classpath: custom_banner.txt
+
+server:
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/pruebas?useSSL=false
+    username: luis
+    password: password
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
