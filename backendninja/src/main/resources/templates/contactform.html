@@ -29,12 +29,15 @@
 				City: <input type="text" class="form-control"></input>
 				<br/>
 				<br/>
+				<a href="#" ></a>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">
 					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Accept
 				</button>
-				<button class="btn btn-lg btn-primary btn-block" type="submit">
-					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Accept
-				</button>
+				<a href="#" th:href="@{/contact/cancel}">
+					<button class="btn btn-lg btn-primary btn-block" type="submit">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Accept
+					</button>
+				</a>
 			</form>
 		</div>
 	</div>
