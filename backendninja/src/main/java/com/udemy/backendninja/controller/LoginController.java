@@ -42,7 +42,7 @@ public class LoginController {
 		LOG.info("Method: showLoginForm() -- " + "PARAMS userCredential" + userCredential.toString());
 		if(userCredential.getUsername().equals("user") && userCredential.getPassword().equals("user")){
 			LOG.info("Returning to login contacts");
-			return ViewConstant.CONTACTS;
+			return "redirect:/contacts/showcontacts";
 		}
 		LOG.info("Returning to login?error");
 		return "redirect:/login?error";
