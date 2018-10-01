@@ -2,7 +2,6 @@ package java8curso.lambda;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class LambdaApp {
@@ -35,8 +34,8 @@ public class LambdaApp {
 				return (n1+n2)/2;
 			}
 		};*/
-		Operacion operacion = (double x, double y) -> (x+y)/2;
-		System.out.println(operacion.calcular(5, 2));
+		Operation operation = (double x, double y) -> (x+y)/2;
+		System.out.println(operation.calcular(5, 2));
 	}
 	
 	public static void main(String[] args) {
