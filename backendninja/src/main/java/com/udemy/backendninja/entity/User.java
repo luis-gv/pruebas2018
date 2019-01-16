@@ -10,8 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.udemy.backendninja.entity.UserRole;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
@@ -19,13 +22,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class User {
 
 	@Id
 	@Column(name="username", unique=true, nullable=false, length=45)
 	private String userName;
 	
-	@Column(name="password", unique=true, nullable=false, length=45)
+	@Column(name="password", nullable=false, length=100)
 	private String password;
 	
 	@Column(name="enabled", nullable=false)
